@@ -63,15 +63,16 @@ function Home() {
                 <button type="submit" className="search-button">Search</button>
             </form>
 
-            {error && <div className="errpr-message">{error} </div>}
+            {error && <div className="error-message">{error} </div>}
 
             {loading ? <div className="loading"><h1>Loading.....</h1></div> :
-             <div className="movies-grid">
-                {movies.map((movie) => (
-                    // movie.title.toLocaleLowerCase().startsWith(searchQuery) &&()
-                    <MovieCard movie={movie} key={movie.id} />
-                ))}
-
+            <div className="movie-container">
+                <div className="movies-grid">
+                    {movies.map((movie) => (
+                        // movie.title.toLocaleLowerCase().startsWith(searchQuery) &&()
+                        <MovieCard movie={movie} key={movie.id} />
+                    ))}
+                </div>
             </div>
             }
 
