@@ -70,7 +70,7 @@
 .movies-grid {
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(5, 300px);
+  grid-template-columns: repeat(4, 300px);
   gap: 1.5rem;
   padding: 1rem;
   box-sizing: border-box;
